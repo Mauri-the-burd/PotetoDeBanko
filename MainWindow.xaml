@@ -1,0 +1,49 @@
+﻿<Window x:Class="Bank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        WindowState="Maximized" WindowStyle="None"
+        Title="MainWindow" Height="1080" Width="1920" Background="#FFEEE3BC">
+
+    <Grid>
+        <Image Source="Media/Bkg.png" Margin="0,719,0,0" Stretch="Fill" OpacityMask="Black"></Image>
+        <Image Source="/Media/Circle.png" Margin="1180,244,178,276" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="0,1005,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="804" FontSize="20" Foreground="White"><Run Language="en-ph" Text="Made by Anthonette Llorhayne S. Yao"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="0,1027,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="804" Foreground="White" FontSize="15"><Run Language="en-ph" Text="All rights reserved."/></TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" Margin="150,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="742" FontSize="55" FontWeight="Bold">
+        <Run Language="en-ph" Text="Welcome to POTATO BENK!"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="150,399,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="174" Width="870" FontSize="50"><Run Text="The most trusted online "/><Run Language="en-ph" Text="security "/><Run Text="bank in Europe, Australia, and Asia."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="150,578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="174" Width="804" FontSize="42"><Run Language="en-ph" Text="Don't have an account? Sign up and become a potato warrior!"/></TextBlock>
+
+        <DockPanel LastChildFill="False" Margin="0,0,0,964" Background="#FF1E1E1E"/>
+
+        <TextBlock Text="POTATO" FontWeight="Bold" Foreground="#FFCCA92C" Margin="127,12,1548,1003" FontSize="35" RenderTransformOrigin="0.502,0.218"></TextBlock>
+        <TextBlock Text="Benk" Foreground="#FFF1D46D" Margin="127,45,1548,974" FontSize="35" RenderTransformOrigin="0.502,0.218"></TextBlock>
+        <Button Content="Close" Foreground="#FFFFC5C5" Margin="1622,34,126,978" FontSize="35" RenderTransformOrigin="0.502,0.218" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_1"></Button>
+        <Button Content="Login" Foreground="#FFFFC5C5" Margin="1434,35,356,975" FontSize="35" RenderTransformOrigin="0.502,0.218" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2"></Button>
+
+        <Image Source="Media/fight.png" Margin="946,0,186,121" Height="717" VerticalAlignment="Bottom"></Image>
+        <Image Source="Media/logo.png" Margin="12,10,1796,973" RenderTransformOrigin="0.525,0.27"></Image>
+        <Button Content="Home" Margin="1160,31,540,973" Style="{StaticResource RoundButtonTemplate_HomePage}" Background="#FFE6443C" FontSize="35" FontWeight="Bold" Foreground="#FF1E1E1E"></Button>
+
+
+
+
+
+
+    </Grid>
+</Window>

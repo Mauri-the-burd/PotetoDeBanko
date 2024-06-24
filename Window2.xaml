@@ -1,0 +1,18 @@
+﻿<Window x:Class="Bank.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Window2" Height="180" Width="471" Background="#FFFBEBC9">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="162,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="35" TextChanged="TextBox_TextChanged" x:Name="WithdrawTextBox"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="421" FontSize="17"><Run Text="How much do you want to"/><Run Text=" withdraw in your savings"/><Run Language="en-ph" Text="?"/></TextBlock>
+        <Button Style="{StaticResource RoundButtonTemplate_HomePage}" Content="OK" HorizontalAlignment="Left" Margin="30,82,0,0" VerticalAlignment="Top" Height="33" Width="106" Background="#FF24A091" FontSize="20" Foreground="Black" FontWeight="Bold" Click="WithdrawTextBox_Click"/>
+        <Label Content="Balance:" HorizontalAlignment="Left" Margin="162,122,0,0" VerticalAlignment="Top" Width="156" x:Name="BalanceLabel"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="0,143,0,0" VerticalAlignment="Top" Width="275" x:Name="UserLabel" FontSize="8"/>
+        <TextBlock HorizontalAlignment="Left" Margin="318,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" x:Name="DateTimeDisplay"/>
+
+    </Grid>
+</Window>

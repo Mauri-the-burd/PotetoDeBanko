@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Media\angry.png" />
+    <None Remove="Media\Bkg.png" />
+    <None Remove="Media\Circle.png" />
+    <None Remove="Media\fight.png" />
+    <None Remove="Media\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Media\angry.png" />
+    <Resource Include="Media\Bkg.png" />
+    <Resource Include="Media\Circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Media\fight.png" />
+    <Resource Include="Media\logo.png" />
+  </ItemGroup>
+
+</Project>

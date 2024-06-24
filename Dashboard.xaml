@@ -1,0 +1,23 @@
+﻿<Window x:Class="Bank.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="800" Width="600" Background="#FFFBE4CD">
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="128" Stroke="Black" VerticalAlignment="Top" Width="600" Fill="#FF1D1D1D"/>
+        <Image Margin="16,26,497,671" Source="/Media/logo.png" Stretch="Fill"/>
+        <TextBlock FontWeight="Bold" Foreground="Black" Margin="278,289,64,358" FontSize="35" RenderTransformOrigin="0.502,0.218"><Run Text="WELCOME,"/><LineBreak/><Run Text="Potato Warrior!"/></TextBlock>
+        <TextBlock Text="Benk" Foreground="#FFF1D46D" Margin="118,64,237,659" FontSize="35" RenderTransformOrigin="0.502,0.218"/>
+        <Button Content="Withdraw" HorizontalAlignment="Center" VerticalAlignment="Top" Height="61" Width="390" Background="#FFDEA655" FontSize="40" Margin="0,467,0,0" Click="Button_Click"/>
+        <Button Content="Deposit" HorizontalAlignment="Center" Margin="0,544,0,0" VerticalAlignment="Top" Height="61" Width="390" Background="#FFDEA655" FontSize="40" Click="Button_Click_1"/>
+        <Button Style="{StaticResource RoundButtonTemplate_HomePage}" Content="Back" HorizontalAlignment="Center" Margin="0,655,0,0" VerticalAlignment="Top" Height="54" Width="96" Background="#FF24A091" FontSize="20" Foreground="Black" FontWeight="Bold"/>
+        <Image Margin="60,156,266,353" Source="/Media/fight.png" Stretch="Fill"/>
+
+
+    </Grid>
+
+</Window>
